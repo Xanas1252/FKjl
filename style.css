@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+html,body{
+    margin: 0;
+}
+.header{
+    padding: 0.2em 2em;
+    background: #333;
+}
+
+.header h3{
+color: aliceblue;
+font-family: 'Notable', sans-serif;
+}
+section{
+    padding: 5em;
+    display: inline-block;
+    text-align: center;
+}
+
+.the-quote{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    border: 1px solid #c4c4c4;
+    display: grid;
+    grid-template-rows:70% 30%;
+   
+}
+
+
+.section1{
+    padding: 1em;
+}
+
+
+.section2{
+   
+    border-top: 1px solid #c4c4c4;
+     display: grid;
+   
+    align-items: center;
+}
+footer h3{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    padding: 1em;
+    text-align: center;
+    margin:0;
+    color: antiquewhite;
+}
+
+.con2{
+    padding: 0 1em;
+}
+.fas{
+color: red;
+}
+
+@media only screen and (max-width:500px){
+    .header h3{
+        font-size: 0.8em;
+    }
+    section{
+        padding: 1em;
+    }
+}
+
