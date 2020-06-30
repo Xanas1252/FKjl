@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
 html,body{
     margin: 0;
@@ -13,17 +14,16 @@ color: aliceblue;
 font-family: 'Notable', sans-serif;
 }
 section{
+    
     padding: 5em;
     display: inline-block;
     text-align: center;
 }
 
 .the-quote{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+   
     height: 200px;
-    border: 1px solid #c4c4c4;
+   /* border: 1px solid #c4c4c4;*/
     display: grid;
     grid-template-rows:70% 30%;
    
@@ -32,12 +32,17 @@ section{
 
 .section1{
     padding: 1em;
+    display: inline-block;
+    
 }
 
-
+.All{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
 .section2{
    
-    border-top: 1px solid #c4c4c4;
+   /* border-top: 1px solid #c4c4c4;*/
      display: grid;
    
     align-items: center;
@@ -52,7 +57,9 @@ footer h3{
     margin:0;
     color: antiquewhite;
 }
-
+.timer p{
+    margin: 0;
+}
 .con2{
     padding: 0 1em;
 }
@@ -61,8 +68,17 @@ color: red;
 }
 
 
+p {
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    background: black;
+    padding: 0.5em;
+    font-family: 'Pangolin', cursive;
 
 
+  }
 
 @media only screen and (max-width:500px){
     .header h3{
@@ -70,6 +86,11 @@ color: red;
     }
     section{
         padding: 1em;
+       
+    }
+    p{
+        padding: 0.2em;
+        font-size: 2em;
     }
 }
 

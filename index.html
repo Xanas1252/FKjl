@@ -9,26 +9,27 @@
 <title>FkjlAklgTmfY.com</title>
 
     </head>
-    <body>
+    <body style="background: skyblue;">
+        
 <header>
     <div class="header">
 <h3>FkjlAklg<br>TmfY .com</h3>
     </div>
 </header>
-
-<section>
+<div class="All">
+<section >
     <div class="the-quote">
 <div class="section1">
 
-    I swear I couldn't love you more than I do right now, and yet I know I will tomorrow..
+   ALL that YOU are is ALL that I'll ever need
 <br>
-<h3 style="color: #333;">- Leo Christopher -</h3>
+<h3 style="color: #333;">- ED Sheeran -</h3>
 </div>
 <div class="section2">
   
       <div class="con2">
         <audio controls autoplay>
-            <source src="EDEN - Wake Up.mp3" type="audio/mpeg">
+            <source src="Logic - Delorean (Official Audio).mp3" type="audio/mpeg">
         </audio>
       </div>
       
@@ -37,10 +38,49 @@
     </div>
 </section>
 
+<section >
+    <div class="timer">
+    <p id="demo"></p>
+    </div>
+</section>
+</div>
+
 <footer>
    <h3> Till the end of time <i class="fas fa-heart"></i></h3>
 </footer>
 
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 2, 2020 10:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 
     </body>
 </html>
