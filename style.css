@@ -38,7 +38,7 @@ section{
 
 .All{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
 }
 .section2{
    
@@ -56,6 +56,12 @@ footer h3{
     text-align: center;
     margin:0;
     color: antiquewhite;
+}
+.timer-sec{
+    padding-bottom:0;
+    padding-top:0; 
+    display:grid; 
+    align-items:center;
 }
 .timer p{
     margin: 0;
@@ -79,13 +85,35 @@ p {
 
 
   }
+.places{
+    padding-top: 0;
+}
+
+.places-visited ul{
+list-style: none;
+display: inline-block;
+
+
+}
+.places-visited li{
+    padding: 1em;
+}
 
 @media only screen and (max-width:500px){
+    .All{
+        grid-template-rows: 0.3fr 0.3fr 1fr;
+
+    }
+    .places-visited ul{
+        padding-left: 0;
+       
+    }
     .header h3{
         font-size: 0.8em;
     }
     section{
         padding: 1em;
+        margin: 0.5em;
        
     }
     p{
