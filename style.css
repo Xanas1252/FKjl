@@ -3,6 +3,7 @@
 
 html,body{
     margin: 0;
+    padding: 0;
 }
 .header{
     padding: 0.2em 2em;
@@ -37,6 +38,7 @@ section{
 }
 
 .All{
+    padding: 0;
     display: grid;
     grid-template-rows: 1fr 0.5fr 1fr;
 }
@@ -99,26 +101,32 @@ display: inline-block;
     padding: 1em;
 }
 
-@media only screen and (max-width:500px){
-    .All{
-        grid-template-rows: 0.3fr 0.3fr 1fr;
 
-    }
-    .places-visited ul{
-        padding-left: 0;
-       
-    }
-    .header h3{
-        font-size: 0.8em;
-    }
+
+@media only screen and (max-width:500px){
+ .timer-sec{
+     padding: 1em;
+ }
+    audio{
+      width: 60%;
+  }
     section{
-        padding: 1em;
-        margin: 0.5em;
-       
-    }
-    p{
-        padding: 0.2em;
-        font-size: 2em;
-    }
+       padding: 1em;
+   }
+   .All{
+     
+    display: grid;
+    grid-template-rows: 1fr 0.5fr auto;
+   
+}
+
+.places-visited{
+    padding: 1em 0;
+}
+
+.places-visited ul{
+    padding: 0;
+    
+}
 }
 
